@@ -66,20 +66,45 @@
 // console.log(filterByRating(books));
 
 // TODO Problem 5
-type TypeCheck5 = {
-  id: number;
-  name: string;
-  email: string;
-  isActive: boolean;
-};
-function filterActiveUsers(items: TypeCheck5[]): TypeCheck5[] {
-  return items.filter((item) => item.isActive === true);
-}
+// type TypeCheck5 = {
+//   id: number;
+//   name: string;
+//   email: string;
+//   isActive: boolean;
+// };
+// function filterActiveUsers(items: TypeCheck5[]): TypeCheck5[] {
+//   return items.filter((item) => item.isActive === true);
+// }
 
-const users = [
-  { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true },
-  { id: 2, name: 'Asha', email: 'asha@example.com', isActive: false },
-  { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true },
-];
+// const users = [
+//   { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true },
+//   { id: 2, name: 'Asha', email: 'asha@example.com', isActive: false },
+//   { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true },
+// ];
 
-console.log(filterActiveUsers(users));
+// console.log(filterActiveUsers(users));
+
+// TODO Problem 6
+// interface Book {
+//   title: string;
+//   author: string;
+//   publishedYear: number;
+//   isAvailable: boolean;
+// }
+
+// function printBookDetails(book: Book): void {
+//   console.log(
+//     `Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${
+//       book.isAvailable ? 'Yes' : 'No'
+//     }`
+//   );
+// }
+
+// const myBook: Book = {
+//   title: 'The Great Gatsby',
+//   author: 'F. Scott Fitzgerald',
+//   publishedYear: 1925,
+//   isAvailable: true,
+// };
+
+// printBookDetails(myBook);
