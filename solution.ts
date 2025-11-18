@@ -64,3 +64,22 @@
 // ];
 
 // console.log(filterByRating(books));
+
+// TODO Problem 5
+type TypeCheck5 = {
+  id: number;
+  name: string;
+  email: string;
+  isActive: boolean;
+};
+function filterActiveUsers(items: TypeCheck5[]): TypeCheck5[] {
+  return items.filter((item) => item.isActive === true);
+}
+
+const users = [
+  { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true },
+  { id: 2, name: 'Asha', email: 'asha@example.com', isActive: false },
+  { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true },
+];
+
+console.log(filterActiveUsers(users));
